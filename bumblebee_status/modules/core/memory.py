@@ -27,7 +27,7 @@ class Module(core.module.Module):
     def __init__(self, config, theme):
         super().__init__(config, theme, core.widget.Widget(self.memory_usage))
         core.input.register(
-            self, button=core.input.LEFT_MOUSE, cmd="gnome-system-monitor"
+            self, button=core.input.LEFT_MOUSE, cmd="urxvt -e  htop -t --sort-key=PERCENT_MEM"
         )
 
     @property

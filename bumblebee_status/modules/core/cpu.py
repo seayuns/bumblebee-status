@@ -35,7 +35,7 @@ class Module(core.module.Module):
             widget.set("theme.minwidth", self._format.format(100.0 - 10e-20))
 
         core.input.register(
-            self, button=core.input.LEFT_MOUSE, cmd="gnome-system-monitor"
+            self, button=core.input.LEFT_MOUSE, cmd="urxvt -e  htop -t --sort-key=PERCENT_CPU"
         )
 
     @property
